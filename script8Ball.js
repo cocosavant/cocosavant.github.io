@@ -22,7 +22,7 @@ function getMagicMeme(event) {
 } 
 
 function getRandomMeme(searchTerm="cat") {
-  fetch(`http://api.giphy.com/v1/gifs/translate?api_key=${apiKey}&s=${encodeURIComponent(searchTerm)}`)
+  fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${apiKey}&s=${encodeURIComponent(searchTerm)}`)
     .then(function (res) {
       return res.json();
     })
